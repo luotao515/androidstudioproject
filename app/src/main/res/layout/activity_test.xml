@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<RatingBar-->
+        <!--android:id="@+id/ratingBar_evaluate_taskDetails_quantitativeSurvey"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:numStars="5"-->
+        <!--android:rating="0"-->
+        <!--android:stepSize="1"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.example.administrator.testbylt.MyRatingBar
+            android:id="@+id/ratingbar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            app:space="20dp"
+            app:starHeight="45dp"
+            app:starWidth="45dp"
+            app:starDrawable="@drawable/ic_star_border"
+            app:progressColor="@drawable/star"
+            app:rating="0"
+            app:isIndicator="false">
+        </com.example.administrator.testbylt.MyRatingBar>
+
+        <Button
+            android:id="@+id/getRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123456"/>
+
+    <Button
+        android:id="@+id/button_startcamre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启摄像头"/>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+         />
+
+
+</LinearLayout>
